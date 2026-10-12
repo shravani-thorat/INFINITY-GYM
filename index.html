@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Infinity — PT Studio & GYM</title>
+<meta name="description" content="INFINITY premium fitness club customer website and admin dashboard demo">
+<meta name="theme-color" content="#f5f1ea">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="customerApp">
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><span class="brand-mark">oo</span>INFINITY FITNESS STUDIO</a>
+  <nav class="navlinks"><a href="#experience">Experience</a><a href="#programs">Programs</a><a href="#plans">Membership</a><a href="#tools">Tools</a><a href="#contact">Contact</a></nav>
+  <div class="nav-actions"><button class="btn ghost" onclick="openAdmin()">Admin Portal</button><a class="btn primary" href="#plans">Join INFINITY</a></div>
+  <button class="menu" onclick="document.querySelector('.navlinks').classList.toggle('show')">☰</button>
+</div></header>
+
+<section class="hero" id="home"><div class="wrap hero-grid">
+ <div><div class="eyebrow">Performance club • Pune</div>
+ <h1>Build a body that <span>keeps up.</span></h1>
+ <p class="lead">A modern training club for strength, conditioning and sustainable progress. Train with a plan, track every win, and belong to a community that shows up.</p>
+ <div class="actions"><a class="btn primary" href="#plans">Explore memberships →</a><a class="btn ghost" href="#tools">Calculate your BMI</a></div>
+ <div class="stats"><div class="stat"><strong>2.8K+</strong><span>members coached</span></div><div class="stat"><strong>32</strong><span>weekly sessions</span></div><div class="stat"><strong>4.9/5</strong><span>member rating</span></div></div></div>
+ <div class="hero-card"><div class="float-badge">OPEN 05:30 — 23:00</div><div class="fake-photo" role="img" aria-label="Free weights area at the INFINITY floor"><div class="photo-label"><b>THE INFINITY FLOOR</b><small>Free weights • turf • recovery</small></div></div></div>
+</div></section>
+
+<section id="experience" class="has-bg"><div class="wrap">
+ <div class="section-top"><div><div class="kicker">THE EXPERIENCE</div><h2>More than a gym.</h2></div><p>Everything is designed around one idea: make training easier to start, easier to measure and harder to quit.</p></div>
+ <div class="bento">
+  <article class="tile feature" role="img" aria-label="INFINITY performance floor"><div class="tile-icon">⚡</div><h3>Performance floor</h3><p>Purpose-built zones for strength, functional training, conditioning and mobility. No wasted space. No intimidating maze of machines.</p><div class="arrow">↗</div></article>
+  <article class="tile"><div class="tile-icon">◉</div><h3>Smart tracking</h3><p>See sessions, attendance and milestones in one simple member journey.</p><div class="arrow">↗</div></article>
+  <article class="tile"><div class="tile-icon">✦</div><h3>Small-group coaching</h3><p>Focused sessions capped for better attention and better energy.</p><div class="arrow">↗</div></article>
+  <article class="tile"><div class="tile-icon">↗</div><h3>Recovery zone</h3><p>Mobility tools, stretching space and guided recovery protocols.</p><div class="arrow">↗</div></article>
+  <article class="tile"><div class="tile-icon">⌁</div><h3>Nutrition support</h3><p>Practical habits instead of complicated meal plans you cannot sustain.</p><div class="arrow">↗</div></article>
+ </div>
+</div></section>
+
+<section id="programs" class="has-bg"><div class="wrap">
+ <div class="section-top"><div><div class="kicker">PROGRAMS</div><h2>Choose your lane.</h2></div><p>Different goal. Different plan. Same standard of coaching.</p></div>
+ <div class="programs">
+  <article class="program"><div class="program-media media-strength" role="img" aria-label="Athlete performing a barbell overhead press"><span class="num">01 / BUILD</span></div><div class="program-body"><h3>Strength Lab</h3><p>Progressive training for people who want to get stronger and move with confidence.</p><ul><li>3 coached sessions / week</li><li>Progressive strength plan</li><li>Monthly assessment</li></ul></div></article>
+  <article class="program"><div class="program-media media-conditioning" role="img" aria-label="Member training with battle ropes"><span class="num">02 / MOVE</span></div><div class="program-body"><h3>Conditioning</h3><p>High-energy sessions combining cardio, power and functional movement.</p><ul><li>HIIT &amp; conditioning blocks</li><li>Heart-rate focused sessions</li><li>Flexible class booking</li></ul></div></article>
+  <article class="program"><div class="program-media media-mobility" role="img" aria-label="Athlete doing a core tuck hold on gymnastic rings"><span class="num">03 / RESET</span></div><div class="program-body"><h3>Mobility + Core</h3><p>Build control, improve movement quality and create a body that feels as good as it looks.</p><ul><li>Mobility flows</li><li>Core stability</li><li>Recovery guidance</li></ul></div></article>
+ </div>
+</div></section>
+
+<section id="plans" class="has-bg"><div class="wrap">
+ <div class="section-top"><div><div class="kicker">MEMBERSHIP</div><h2>Simple plans. Serious training.</h2></div><p>Start with the level that matches your routine. Upgrade anytime.</p></div>
+ <div class="pricing">
+  <article class="price-card"><span class="pill">FLEX</span><h3>Open Gym</h3><div class="price">₹1,799 <small>/ month</small></div><ul class="features"><li>Unlimited gym floor access</li><li>Fitness assessment</li><li>Locker access</li><li>Member app</li></ul><button class="btn ghost" onclick="openJoin('Open Gym')">Choose plan</button></article>
+  <article class="price-card featured"><span class="pill">MOST POPULAR</span><h3>Performance</h3><div class="price">₹2,999 <small>/ month</small></div><ul class="features"><li>Everything in Open Gym</li><li>8 coached classes / month</li><li>Monthly progress review</li><li>Nutrition starter session</li></ul><button class="btn primary" onclick="openJoin('Performance')">Start training</button></article>
+  <article class="price-card"><span class="pill">1:1</span><h3>Elite Coaching</h3><div class="price">₹5,999 <small>/ month</small></div><ul class="features"><li>Personal training sessions</li><li>Custom training program</li><li>Nutrition check-ins</li><li>Priority class booking</li></ul><button class="btn ghost" onclick="openJoin('Elite Coaching')">Apply now</button></article>
+ </div>
+</div></section>
+
+<section id="tools" class="has-bg"><div class="wrap">
+ <div class="section-top"><div><div class="kicker">MEMBER TOOLS</div><h2>Know where you stand.</h2></div><p>Quick tools for your first visit and your next milestone.</p></div>
+ <div class="bmi">
+  <div class="bmi-card"><h3>BMI quick check</h3><p style="color:var(--muted);font-size:13px;margin:8px 0 22px">A simple screening calculation — not a medical diagnosis.</p>
+   <div class="formgrid"><div class="field"><label>Height (cm)</label><input id="height" type="number" placeholder="170"></div><div class="field"><label>Weight (kg)</label><input id="weight" type="number" placeholder="70"></div></div>
+   <button class="btn primary" onclick="calcBMI()">Calculate BMI</button><div id="bmiResult" class="bmi-result">Enter your details to see your result.</div>
+  </div>
+  <div class="booking-card"><h3>Book a free trial</h3><p style="color:var(--muted);font-size:13px;margin:8px 0 20px">Pick a preferred session and our team will confirm your visit.</p>
+   <div class="formgrid"><div class="field"><label>Name</label><input id="trialName" placeholder="Your name"></div><div class="field"><label>Phone</label><input id="trialPhone" placeholder="98xxxxxx"></div></div>
+   <div class="formgrid"><div class="field"><label>Goal</label><select id="trialGoal"><option>Build strength</option><option>Fat loss</option><option>General fitness</option><option>Mobility</option></select></div><div class="field"><label>Preferred time</label><select><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div></div>
+   <button class="btn primary" onclick="submitTrial()">Request trial →</button><div id="trialMsg" class="notice hidden"></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="dark-band"><div class="wrap">
+ <div class="section-top"><div><div class="kicker">MEMBER STORIES</div><h2>Progress feels better together.</h2></div></div>
+ <div class="testimonials"><article class="quote"><div class="stars">★★★★★</div><p>“The biggest difference is the structure. I stopped guessing what to do when I walk into the gym.”</p><small>— Rhea, Performance member</small></article><article class="quote"><div class="stars">★★★★★</div><p>“The coaches remember your numbers and actually notice when you improve. That keeps me consistent.”</p><small>— Tejas, Strength Lab</small></article><article class="quote"><div class="stars">★★★★★</div><p>“It feels premium without being intimidating. The community is the best part.”</p><small>— Sruti, Open Gym</small></article></div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="cta"><div><div class="kicker">READY WHEN YOU ARE</div><h2>One good decision.<br>Then show up.</h2><p>Book your free trial and experience INFINITY for yourself.</p></div><button class="btn" onclick="openJoin('Free Trial')">Book free trial →</button></div></div></section>
+
+<footer><div class="wrap footerrow"><div>© 2026 INFINITY Fitness Club • Demo website</div><div class="footerlinks"><a href="#home">Instagram</a><a href="#contact">WhatsApp</a><a href="#" onclick="openAdmin();return false">Admin Portal</a></div></div></footer>
+</div>
+
+<div id="adminApp" class="hidden">
+<div class="admin-shell">
+ <aside class="side" id="side"><div class="brand"><span class="brand-mark">V</span>INFINITY ADMIN</div><small>Workspace</small>
+  <a href="#" class="active" data-view="dash" onclick="adminView('dash');return false">▦ Dashboard</a>
+  <a href="#" data-view="members" onclick="adminView('members');return false">◉ Members</a>
+  <a href="#" data-view="leads" onclick="adminView('leads');return false">✉ Leads <span id="leadBadge"></span></a>
+  <a href="#" data-view="classes" onclick="adminView('classes');return false">▤ Classes</a>
+  <a href="#" data-view="payments" onclick="adminView('payments');return false">₹ Payments</a>
+  <a href="#" data-view="reports" onclick="adminView('reports');return false">⌁ Reports</a>
+  <div class="sidefoot"><a href="#" onclick="showCustomer();return false">← View customer site</a><a href="#" onclick="logout();return false">↪ Sign out</a></div>
+ </aside>
+ <main class="adminmain">
+  <div class="admintop"><div style="display:flex;gap:12px;align-items:center"><button class="menu mobile-admin" onclick="document.getElementById('side').classList.toggle('open')">☰</button><div class="admin-title"><h1 id="adminHeading">Dashboard</h1><p>Saturday, 03 October 2026 • Live demo workspace</p></div></div><div class="adminuser"><div style="text-align:right"><b style="font-size:12px">Admin</b><div style="font-size:10px;color:var(--muted)">INFINITY HQ</div></div><div class="avatar">VA</div></div></div>
+  <div class="adminbody">
+   <div id="view-dash" class="adminview active">
+    <div class="adminstats"><div class="astat"><label>ACTIVE MEMBERS</label><b id="sMembers">1,284</b><span class="up">↑ 8.4% this month</span></div><div class="astat"><label>MONTHLY REVENUE</label><b>₹18.42L</b><span class="up">↑ 12.1% vs last month</span></div><div class="astat"><label>TRIAL LEADS</label><b id="sLeads">47</b><span class="up">↑ 6 new today</span></div><div class="astat"><label>ATTENDANCE</label><b>78%</b><span class="up">↑ 4.2% this week</span></div></div>
+    <div class="dashgrid"><div class="panel"><div class="panelhead"><b>Revenue overview</b><span class="pill">Last 6 months</span></div><div class="panelbody"><div class="chart"><div class="col"><em>12.4L</em><i style="height:55%"></i><span>May</span></div><div class="col"><em>13.1L</em><i style="height:62%"></i><span>Jun</span></div><div class="col"><em>14.8L</em><i style="height:70%"></i><span>Jul</span></div><div class="col"><em>15.2L</em><i style="height:74%"></i><span>Aug</span></div><div class="col"><em>16.4L</em><i style="height:82%"></i><span>Sep</span></div><div class="col"><em>18.4L</em><i style="height:96%"></i><span>Oct</span></div></div></div></div>
+     <div class="panel"><div class="panelhead"><b>Membership mix</b></div><div class="panelbody"><div class="bar"><div class="barline"><span>Open Gym</span><b>48%</b></div><div class="track"><div class="fill" style="width:48%"></div></div></div><div class="bar"><div class="barline"><span>Performance</span><b>36%</b></div><div class="track"><div class="fill" style="width:36%"></div></div></div><div class="bar"><div class="barline"><span>Elite Coaching</span><b>16%</b></div><div class="track"><div class="fill" style="width:16%"></div></div></div></div></div></div>
+    <div class="panel" style="margin-top:16px"><div class="panelhead"><b>Live activity</b><span style="font-size:11px;color:var(--muted)">Auto-updated</span></div><div class="panelbody"><div class="activity"><i class="dot"></i><div><b>Priya Shah renewed Performance plan</b><p>₹2,999 • 4 minutes ago</p></div></div><div class="activity"><i class="dot"></i><div><b>New trial request from Kabir Mehta</b><p>Fat loss • 18 minutes ago</p></div></div><div class="activity"><i class="dot"></i><div><b>Coach Anamika completed 7 check-ins</b><p>Strength Lab • 42 minutes ago</p></div></div></div></div>
+   </div>
+   <div id="view-members" class="adminview"><div class="toolbar"><div class="search"><input id="memberSearch" oninput="renderMembers()" placeholder="Search member name or phone..."></div><button class="btn primary" onclick="addDemoMember()">+ Add member</button></div><div class="panel"><div class="panelhead"><b>Member directory</b><span class="pill" id="memberCount">6 records</span></div><div class="tablewrap"><table class="atable"><thead><tr><th>Member</th><th>Plan</th><th>Joined</th><th>Renewal</th><th>Status</th><th>Action</th></tr></thead><tbody id="memberRows"></tbody></table></div></div></div>
+   <div id="view-leads" class="adminview"><div class="panel"><div class="panelhead"><b>Trial & enquiry leads</b><button class="btn primary" onclick="clearLeads()">Clear demo leads</button></div><div class="tablewrap"><table class="atable"><thead><tr><th>Name</th><th>Phone</th><th>Goal</th><th>Source</th><th>Status</th></tr></thead><tbody id="leadRows"></tbody></table></div></div></div>
+   <div id="view-classes" class="adminview"><div class="panel"><div class="panelhead"><b>Today's classes</b><span class="pill">18 sessions</span></div><div class="tablewrap"><table class="atable"><thead><tr><th>Time</th><th>Class</th><th>Coach</th><th>Capacity</th><th>Booked</th></tr></thead><tbody><tr><td>06:00</td><td>Strength Lab</td><td>Aanya</td><td>16</td><td>14</td></tr><tr><td>07:15</td><td>Mobility + Core</td><td>Rohan</td><td>20</td><td>11</td></tr><tr><td>18:00</td><td>Conditioning</td><td>Dev</td><td>18</td><td>18</td></tr><tr><td>19:15</td><td>Strength Lab</td><td>Aanya</td><td>16</td><td>13</td></tr><tr><td>20:30</td><td>Open Circuit</td><td>Meera</td><td>24</td><td>17</td></tr></tbody></table></div></div></div>
+   <div id="view-payments" class="adminview"><div class="adminstats"><div class="astat"><label>COLLECTED TODAY</label><b>₹74,650</b><span class="up">34 payments</span></div><div class="astat"><label>PENDING</label><b>₹2.18L</b><span style="color:var(--orange);font-size:11px">72 invoices</span></div></div><div class="panel"><div class="panelhead"><b>Recent payments</b></div><div class="tablewrap"><table class="atable"><thead><tr><th>Receipt</th><th>Member</th><th>Plan</th><th>Amount</th><th>Mode</th><th>Date</th></tr></thead><tbody><tr><td>#VL-9041</td><td>Priya Shah</td><td>Performance</td><td>₹2,999</td><td>UPI</td><td>03 Oct</td></tr><tr><td>#VL-9040</td><td>Arjun Rao</td><td>Open Gym</td><td>₹1,799</td><td>Card</td><td>03 Oct</td></tr><tr><td>#VL-9039</td><td>Neha Jain</td><td>Elite</td><td>₹5,999</td><td>UPI</td><td>03 Oct</td></tr></tbody></table></div></div></div>
+   <div id="view-reports" class="adminview"><div class="dashgrid"><div class="panel"><div class="panelhead"><b>Monthly performance</b></div><div class="panelbody"><div class="bar"><div class="barline"><span>New memberships</span><b>186</b></div><div class="track"><div class="fill" style="width:78%"></div></div></div><div class="bar"><div class="barline"><span>Renewals</span><b>412</b></div><div class="track"><div class="fill" style="width:91%"></div></div></div><div class="bar"><div class="barline"><span>Trial conversion</span><b>64%</b></div><div class="track"><div class="fill" style="width:64%"></div></div></div></div></div><div class="panel"><div class="panelhead"><b>Demo actions</b></div><div class="panelbody"><button class="btn ghost" style="width:100%" onclick="toast('Report export prepared for demo')">↓ Export monthly report</button><button class="btn ghost" style="width:100%;margin-top:10px" onclick="toast('Member attendance report prepared')">↓ Attendance report</button></div></div></div></div>
+  </div>
+ </main>
+</div>
+</div>
+
+<div class="modal hidden" id="adminModal"><div class="modalbox"><div class="modalhead"><div><div class="loginbrand">INFINITY <span>ADMIN</span></div><div style="color:var(--muted);font-size:12px">Secure demo workspace</div></div><button class="close" onclick="closeModal('adminModal')">×</button></div><div class="field"><label>Username</label><input id="adminUser" value="infinityadmin"></div><div class="field"><label>Password</label><input id="adminPass" type="password" placeholder="Enter demo password"></div><button class="btn primary" style="width:100%" onclick="login()">Sign in to dashboard</button><div id="loginError" class="error hidden">Incorrect demo credentials.</div><div class="notice">Demo access: <b style="color:var(--text)">infinityadmin</b> / <b style="color:var(--accent)">Infinity@2026</b></div></div></div>
+
+<div class="modal hidden" id="joinModal"><div class="modalbox"><div class="modalhead"><div><div class="loginbrand">JOIN <span>INFINITY</span></div><div style="color:var(--muted);font-size:12px" id="joinSub">Start your journey</div></div><button class="close" onclick="closeModal('joinModal')">×</button></div><div class="formgrid"><div class="field"><label>Full name</label><input id="joinName" placeholder="Your name"></div><div class="field"><label>Phone</label><input id="joinPhone" placeholder="98xxxxxx"></div></div><div class="field"><label>Email</label><input id="joinEmail" type="email" placeholder="you@example.com"></div><div class="field"><label>Preferred plan</label><select id="joinPlan"><option>Open Gym</option><option>Performance</option><option>Elite Coaching</option><option>Free Trial</option></select></div><button class="btn primary" style="width:100%" onclick="submitJoin()">Send request →</button><div id="joinMsg" class="notice hidden"></div></div></div>
+
+<div id="toast" class="hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
